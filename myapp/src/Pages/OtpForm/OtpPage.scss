@@ -1,0 +1,93 @@
+:root {
+    --background-color: #bffffb;
+    --container-color: #006d66;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .otp-box {
+    width: 100%;
+  }
+  
+  .otp-header {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .otp-instructions {
+    font-size: 1.2rem;
+    color: #e0f7f5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .verify-button {
+    background-color: #fff;
+    color: #006d66;
+    border: 1px solid #006d66;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .verify-button:hover {
+    background-color: #006d66;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .resend-link {
+    margin-top: 1rem;
+    color: #e0f7f5;
+    font-size: 1rem;
+  }
+  
+  .resend-link a {
+    color: #00d1c1;
+    text-decoration: none;
+  }
+  
+  .resend-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,14 @@
+.main-layout {
+  display: block;
+  min-height: 100vh;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #bffffb;
+}
+
+.page-content {
+  margin-left: 220px;   // Space for sidebar
+  margin-top: calc(5% + 80px); // 5% top space + approx. navbar height
+  padding: 20px;
+  
+}

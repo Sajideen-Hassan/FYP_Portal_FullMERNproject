@@ -1,0 +1,116 @@
+.template-page {
+  display: flex;
+  min-height: 100vh;
+  background: #bffffb;
+}
+
+.content {
+  margin-left: 100px;
+  width: calc(100% - 190px);
+  padding-top: 80px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.template-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10%;
+  margin-top: 90%;
+  color: #004d4d;
+}
+
+/* ✨ Enhanced Add Project Button ✨ */
+.add-project-btn {
+  position: relative;
+  left: 95%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #2196f3, #21cbf3);
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #1976d2, #03a9f4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: 8%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  &.d-flex {
+    margin-bottom: 20px;
+  }
+}
+
+/* ✨ Enhanced Card Styling ✨ */
+.card {
+  flex: 0 0 48%;
+  position: relative;
+  left: 25%;
+  max-width: 90%;
+  min-width: 300px;
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f0f8ff);
+  border: 2px solid #b3d9ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #004d4d;
+  }
+
+  .card-text {
+    padding: 10px;
+    color: #555;
+  }
+
+  .btn-outline-primary {
+    color: #004d4d;
+    border-color: #004d4d;
+
+    &:hover {
+      background-color: #004d4d;
+      color: white;
+    }
+  }
+}
+
+.row.d-flex.justify-content-center {
+  justify-content: center;
+
+  .card {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}

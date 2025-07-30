@@ -1,0 +1,109 @@
+.Homepage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding-top: 80px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* ✨ Enhanced Welcome Banner ✨ */
+.welcome-banner {
+  width: 100%;
+  margin-top: 60%;
+  margin-left: 20%;
+  background: linear-gradient(135deg, #d1f7ff, #a0f0eb);
+  color: #003d3d;
+  border: 2px solid #00b3b3;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 179, 179, 0.3);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 179, 179, 0.4);
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  &.d-flex {
+    margin-bottom: 20px;
+  }
+}
+
+/* ✨ Enhanced Card Design ✨ */
+.card {
+  flex: 0 0 48%;
+  position: relative;
+  left: 25%;
+  max-width: 90%;
+  min-width: 300px;
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f0f8ff);
+  border: 2px solid #b3d9ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #004d4d;
+  }
+
+  .card-text {
+    padding: 10px;
+    color: #555;
+  }
+
+  .btn-outline-primary {
+    color: #004d4d;
+    border-color: #004d4d;
+
+    &:hover {
+      background-color: #004d4d;
+      color: white;
+    }
+  }
+}
+
+.row.d-flex.justify-content-center {
+  justify-content: center;
+
+  .card {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
