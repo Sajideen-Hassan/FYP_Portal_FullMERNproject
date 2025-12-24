@@ -71,7 +71,11 @@ const ProjectViewPage = () => {
                     <td>
                       <img
                         src="https://dashboard.codeparrot.ai/api/image/Z900sgAVCboODTK9/upload-l.png"
-                        alt="document"
+                        alt="document icon"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = "https://via.placeholder.com/24?text=📄";
+                        }}
                       />
                     </td>
                     <td>

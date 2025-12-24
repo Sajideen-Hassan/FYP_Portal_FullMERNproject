@@ -1,5 +1,9 @@
 import React from "react";
 import "./NavBar.scss";
+import lguLogo from "../../Img/lahore-garrison-university-lahore-pakistan.png";
+import profileImg from "../../Img/FYP.Portal.png";
+import notificationIcon from "../../Img/notifications.png";
+import settingsIcon from "../../Img/settings.png";
 
 const NavBar = () => {
   return (
@@ -8,7 +12,7 @@ const NavBar = () => {
         {/* Left: Logo + Portal Text */}
         <div className="logo-section d-flex align-items-center">
           <img
-            src="https://dashboard.codeparrot.ai/api/image/Z9gVwpIdzXb5OlV4/lgu-logo.png"
+            src={lguLogo}
             alt="Logo"
             width="40"
             height="40"
@@ -33,7 +37,7 @@ const NavBar = () => {
         {/* Right: Profile Section */}
         <div className="profile-section d-flex align-items-center">
           <img
-            src="https://dashboard.codeparrot.ai/api/image/Z9gVwpIdzXb5OlV4/image-2.png"
+            src={profileImg}
             alt="Profile"
             className="profile-img"
           />
@@ -42,12 +46,12 @@ const NavBar = () => {
             <small>Student</small>
           </div>
           <img
-            src="https://dashboard.codeparrot.ai/api/image/Z9gVwpIdzXb5OlV4/notifica.png"
+            src={notificationIcon}
             alt="Notification"
             className="icon-img mx-2"
           />
           <img
-            src="https://dashboard.codeparrot.ai/api/image/Z9gVwpIdzXb5OlV4/settings.png"
+            src={settingsIcon}
             alt="Settings"
             className="icon-img"
           />
